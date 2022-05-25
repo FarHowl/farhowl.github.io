@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Игра Престолов</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script defer src="../js/script.js"></script>
+        <link rel="shortcut icon" href="../images/icon.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <nav id="nav">
+                <div id="bg-black-2" class="background-black-cover"></div>
+                <div class="navlogo">
+                    <a href="../index.html" class="logo">
+                        <img src="../images/logo.png" width="60" height="60" alt="logo" />
+                    </a>
+                </div>
+                <div class="navbuttons">
+                    <a href="news.html" class="butnav">КиноНовости</a>
+                    <a href="films.html" class="butnav">Фильмы</a>
+                    <a href="serials.html" class="butnav">Сериалы</a>
+                </div>
+                <button class="hamburger-menu-icon" id="m-menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24" style="fill: white"><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path></svg>
+                </button>
+            </nav>
+        </header>
+        <div class="hamburger-menu ham-menu-hidden" id="m-menu">
+            <a href="news.html" class="hamburger-button hamburger-pointer-events-none" id="ham-but-1">КиноНовости</a>
+            <a href="films.html" class="hamburger-button hamburger-pointer-events-none" id="ham-but-2">Фильмы</a>
+            <a href="serials.html" class="hamburger-button hamburger-pointer-events-none" id="ham-but-3">Сериалы</a>
+        </div>
+        <div class="background-container">
+            <img class="background" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4bf224bb-235e-4196-9435-6747b7bb313d/1920x" alt="Игра Престолов" />
+        </div>
+        <div class="video">
+            <iframe class="video-size" src="https://www.youtube.com/embed/fAOVvJx0Y60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="bg-black"></div>
+        <div class="film-container-1">
+            <div class="film-container-2">
+                <div class="film-main-information-container-1">
+                    <div class="film-main-information-container-2">
+                        <div class="film-main-information">
+                            <div class="film-title">
+                                <span>Игра Престолов</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="imdb-rating">
+                                    <div class="film-rating-circle">
+                                        <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" fill="transparent" xmlns="http://www.w3.org/2000/svg">
+                                            <circle class="circle-chart__background" stroke="#eee" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
+                                            <circle class="circle-chart__circle" stroke="#4eb04b" stroke-width="2" stroke-dasharray="90,100" cx="15" cy="15" r="14"></circle>
+                                        </svg>
+                                        <b class="film-rating"> 9.0 </b>
+                                    </div>
+                                    <div class="imdb-score">
+                                        <img src="../images/imdb-logo.svg" width="60" height="60" alt="imdb-logo" />
+                                        <div class="imdb-score-title">
+                                            <span>Score</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="film-year">
+                                    <span>2011&ndash;2019</span>
+                                </div>
+                                <div class="serial-season">
+                                    <span>8 сезонов</span>
+                                </div>
+                                <div class="film-resolution">
+                                    <img srcset="https://img.icons8.com/ios-filled/100/4k.png 2x" alt="4k_50x50" loading="lazy" />
+                                </div>
+                                <div class="film-length">
+                                    <span>55 мин.</span>
+                                </div>
+                            </div>
+                            <div class="film-genre">
+                                <span>Фэнтези, драма, боевик, мелодрама, приключения</span>
+                            </div>
+                            <div class="film-describtion">
+                                <span>К концу подходит время благоденствия, и лето, длившееся почти десятилетие, угасает. Вокруг средоточия власти Семи королевств, Железного трона, зреет заговор, и в это непростое время король решает искать поддержки у друга юности Эддарда Старка. В мире, где все — от короля до наемника — рвутся к власти, плетут интриги и готовы вонзить нож в спину, есть место и благородству, состраданию и любви.</span>
+                            </div>
+                            <div class="film-cast-container">
+                                <div class="film-cast">
+                                    <div class="cast-title">
+                                        <span>Режиссер</span>
+                                    </div>
+                                    <div class="people-cast">
+                                        <span>Дэвид Наттер, Алан Тейлор, Алекс Грейвз</span>
+                                    </div>
+                                </div>
+                                <div class="film-cast">
+                                    <div class="cast-title">
+                                        <span>Актеры</span>
+                                    </div>
+                                    <div class="people-cast">
+                                        <span>Питер Динклэйдж, Эмилия Кларк, Кит Харингтон</span>
+                                    </div>
+                                </div>
+                                <div class="film-cast">
+                                    <div class="cast-title">
+                                        <span>Продюсер</span>
+                                    </div>
+                                    <div class="people-cast">
+                                        <span>Дэвид Бениофф, Д.Б. Уайсс, Джордж Р.Р. Мартин</span>
+                                    </div>
+                                </div>
+                                <div class="film-cast">
+                                    <div class="cast-title">
+                                        <span>Сценарий</span>
+                                    </div>
+                                    <div class="people-cast">
+                                        <span>Дэвид Бениофф, Джордж Р.Р. Мартин, Д.Б. Уайсс</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="film-poster">
+                            <img class="film-img-poster" src="https://kinopoisk-ru.clstorage.net/2w8im9401/af5562g5/WixK-8p24RWznPiM6PCbIaTpuITquIffBrLnhekFV6gJvqWgpRzesRo6er4W4Quw4MAUtI3ixeKqgn1Sa0lZ3c7ob2_qUxWxRsndbWlwu-HUrakhD6zWq4PWplTc0OJa-rwmgjI-vUOYOLyqcuUKJSU1oLXNVyFSTiM8RU3dTB07Tki5iDTSYDOsayuqUpthhkotZzhrodw1kwMW2_QViyjM9qIB7BwwivjcmBAUPET11VC0PXVg4prjfdZsCSyve704qhiU8rPzPNtqGXObM7apnJSq-xHM1UDjhxmGlSl7LQThMU7NAmqpXrnBdM7kB7fzFLyEEAJKkI1n7Sv8bDrtG4gINdKQ013omQvDitCk2rznSJlSr_fiokU7RvfLGg63MJO9ThF62PwZUwbMZJSngsQvRcAQ6LFPdJ0Ljo1LbAjLqHWQMcHuGplr4nmDBqmsNuqK4d2k0uG169b0KRotlKNw3X_CSdlPC7FV7Ee1J2M0XrVSMhmxbJcsuz7dSayIqYkkgkOiD7lq2TBLgSYIrKTIGzAcReOyFYk1ZZvKToaCotysMHlIzIlShE7XRSWCdt_W4nAYgH-X7Gm_jWp_uknopYBx45wJSYhCuUDVy1yVqouhT1ZgAmcZpId4iHzUImBsv2B6mt6akAUMpAc3AOXuJ4Fxq-Od9k66DU1qvdtqKEcyAbBu-irJgkszt9jMlHuqkXwUASOlyySmKxvcZGLhD8zCasjPykCXPJVm5EBnncaB4roSnjfNCs__2Z56KNiHQrFzfTiY-XEpgdZpTXa7uZGeN5MwVvk1ZXm7nzXzcz5vUIrobJgSxu6lN0QDB56V4BCZgS-nr7huPjr8SAvZRUKzAl37qyniO3J2Cv7lGptgrheSsRULd_Xrmw0kAuDPLRAKaE0KcIauVMa3AnZNN9HyG0Dd1F1ZzHzrXWv7uQdg4FE8e2uYwQiipfke9mgLEa8GwzMXiQVXS6ptVdIDfSyDeDi--JKF38WkNcLHTvQy8YqDXyT-m6-v6syIuFt1E7Jy3oj6WRAbIkZZX3ZJ25BOFMMz99iX15nYbBfDEX3f46gZH2gC1UyXdUdRxo6G8gNrg44ETpnuPKhOeArZJmFh4bwayYjgOvJn2K9lqnvTP6RAA8dohPUp6b4UgAFvbwMaKQ9qU3Q-ZqWH0lYtZ2KCqJFvhxyJbBw4vHq4mcSCwEA9-8sqIvqgdmlPBIu5Q84XQ3DG21Ql6ot895Ahrt0wiKju2bCW7LQ35gPF_3QTEEqxL2QcOQ6fKU84WKk2okHDLJma27GYk1eJfNZoioJf1YCzBevUhXtL_BUSgT79clprbDhj5s-XBpRyl46E0WKJ0O-UjMs-j7tNC3nYF9EzQ6zZOCkw6qGUiW80yGpCX4XTUSdKhRVIG70VEJFMv3FaiF6pEKTtxddVghXfFvPjiWKPRG0KDW1pXni7qgajUZOOCspY8hsSlgjNFRg7Y52XggGXm7UnSUgOlxKznHyhuSkPOkHUngX1NVPEPMWDY_vgv5bdKfxOuT3ZeliUwUHzravI6sGYg3UpnVb5q7CtltACZku312orDaQgk27MMxvKDQpAxV-FtRbhFc1UoROpYx817Gge7Dq-apj7ZIBx0BxqKGhym6LHqnx2GbqSDVQCA-eJxBZIeV00UQNNPiJLG37LEwXup1b0YXVNdILhqlJ9NZ0ID8yK7Ru5q1eRIfPNmNpLgKpDZsqtNmo64gxGkNHX2IdnKDkORbBTL2yR6whe6RFEn0VEJMAl_ueTIHtgjTTcaQ-d-09YaetU0AFzDAuKiEJb0WabPjRY2dF8R4LCxUjUFYmpfXewo79tcph7PioBFT3Xd0cCVm0EogJYUO3GXkhuf7sderjKN1LhIW_a62jx-qPVyQ81aNqSH5ayIMU7FOQKWG0UwyBNDhIpGl5YAMbf1qVGU0a_lVFSaCIMZCzr3b6rTiuZCwSyQdLfuKlrwZnjhIs9FrqpoX31QOHXm_fFSaosl5FQreyB6tqMiTFEzfX3tcCH3IUgQ8ohb2f_CC1c6x2ruttlQ0LDjduKexJasKR6DeeqOIE95IODpvlnd4tr70Wikt09Y1sorstRBWyVV0WgNa8Gw8A68R8kjAjunXlcCrrIRQMzQ56byzpxK6Blqgz2ijqTbeQxkjcrRMUb2i5UcVO8XeOYOa7KQdbP9_VnYWYtFSHwKNBthF87rG66TotqOpVQE-EuOzg44skDxvqulTgZMd51cZDECQeFy_ndREEyb86z6xoMKWM1bda05NL0D9ThAIlizDb8Ol5f6x66uesnYPHwD7oYmTPZQ0QLDgYo2SJvRELDdggXhihIDAagImw-set6fUsTNm5lJ5Ug969WoqHI0x823nl8T-mfm9jJRTMBcFx46vsRm-DFO55HGalyXPYRA-W6tYbYWz2lkDD8zDKJCk154Rael_TGc3b_FXAwe7LsdD9IzA6azZrJyEURE_M8qOsZ8JuTJvocx3h5Mk1X87IXuJXEKJmMlLCATy8yinhPGiG3_lTE1EI2vISAUdvxPGWNK4x9OWyoWFkHoQOwbSkquDEYwzW4nnYqGFGPBeNjNDslxbqbjpTDE67-Eei6XFqh9Jz0NzbBx77FEhBaI02Ub6pN7ghviko65GLBM3xJWkmCa2CEWOz1idmCLnQgghWa54UoK80FkMNOP2O6C495MTYtZNaUIxa95rAiCDEv1m0aLY8JD6j6SjfhslGu28tJ84sTZljNdFnowT2lwuOHSxUXmRouVrMSTJyBawtv2BGFXGSVFMIUfSVgEHrRLXZcmCw-mI8YG6ikwaGDPuiYGiPLIkXrH3ZoyTGNtPDAxPnUFXuYHqXiUzzMEZkonhozVt625bQTBO1UsLPqEl1kDVmubujcCkrZdMEDMwyIOknBm5K3iO1Eq-nh7NaDcZeLpTQqK86UQMGPzkOKWs5ZsQUt1cT34hY9FyKAirBdw#DSD" alt="Игра Престолов" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-contacts">
+                    <div class="footer-questions">
+                        <span>Есть вопросы? Свяжитесь с нами.</span>
+                    </div>
+                    <div class="email">
+                        <span>Почта: daryakovyaz@ya.ru</span>
+                    </div>
+                    <div class="footer-creator">
+                        <span>Ковязина Дарья &mdash; М3О&ndash;233Б&ndash;20</span>
+                    </div>
+                </div>
+                <div class="icons">
+                    <a class="vk" href=""
+                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#e90101">
+                                    <path
+                                        d="M137.6,22.93333h-103.2c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v103.2c0,6.33533 5.13133,11.46667 11.46667,11.46667h103.2c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-103.2c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667zM122.46973,108.74413l-10.70987,0.14907c0,0 -2.31053,0.45293 -5.332,-1.634c-4.0076,-2.752 -7.78587,-9.91293 -10.7328,-8.98413c-2.98707,0.95173 -2.89533,7.396 -2.89533,7.396c0,0 0.02293,1.1352 -0.65933,1.8748c-0.7396,0.79693 -2.19013,0.71667 -2.19013,0.71667h-4.7988c0,0 -10.58373,0.8772 -19.91187,-8.84653c-10.15947,-10.60093 -19.13787,-31.52187 -19.13787,-31.52187c0,0 -0.52747,-1.31867 0.0344,-1.9952c0.6364,-0.74533 2.35067,-0.76827 2.35067,-0.76827l11.46667,-0.05733c0,0 1.07787,0.1892 1.8576,0.76253c0.6364,0.47013 0.9976,1.35307 0.9976,1.35307c0,0 1.85187,4.6956 4.31147,8.94973c4.79307,8.2904 7.0176,10.10787 8.64587,9.2192c2.3736,-1.29573 1.66267,-11.71893 1.66267,-11.71893c0,0 0.04587,-3.784 -1.19253,-5.4696c-0.9632,-1.31293 -2.77493,-1.7028 -3.56613,-1.80027c-0.64787,-0.086 0.40707,-1.58813 1.78307,-2.26467c2.064,-1.00907 5.7104,-1.0664 10.01613,-1.02627c3.354,0.0344 4.32293,0.2408 5.63013,0.56187c3.956,0.95747 2.6144,4.64973 2.6144,13.50773c0,2.838 -0.51027,6.8284 1.5308,8.14133c0.88293,0.5676 3.03293,0.086 8.3936,-9.05293c2.55133,-4.3344 4.46053,-9.4256 4.46053,-9.4256c0,0 0.41853,-0.90587 1.0664,-1.29573c0.66507,-0.40133 1.55947,-0.2752 1.55947,-0.2752l12.06867,-0.07453c0,0 3.62347,-0.43573 4.214,1.20973c0.6192,1.72 -1.35307,5.73907 -6.28373,12.3152c-8.09547,10.8016 -8.9956,9.79827 -2.2704,16.0476c6.42133,5.9684 7.74573,8.86947 7.96933,9.2364c2.65453,4.4204 -2.95267,4.77013 -2.95267,4.77013z"
+                                    ></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="facebook" href=""
+                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#e90101"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,34.49173 25.41013,62.97493 58.5144,67.95147v-49.71947h-17.02227v-18.08293h17.02227v-12.03427c0,-19.92333 9.70653,-28.66667 26.2644,-28.66667c7.9292,0 12.126,0.59053 14.10973,0.85427v15.78387h-11.29467c-7.02907,0 -9.48293,6.66787 -9.48293,14.17853v9.88427h20.59987l-2.79213,18.08293h-17.80773v49.8628c33.58013,-4.55227 59.48907,-33.2648 59.48907,-68.0948c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="tg" href=""
+                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#e90101">
+                                    <path d="M158.71128,22.53888c-2.58,-2.18784 -6.63232,-2.50088 -10.82224,-0.81872h-0.00688c-4.40664,1.76816 -124.73784,53.38192 -129.6364,55.49064c-0.89096,0.3096 -8.67224,3.21296 -7.87072,9.68016c0.71552,5.8308 6.96944,8.24568 7.73312,8.52432l30.59192,10.4748c2.0296,6.75616 9.5116,31.6824 11.16624,37.00752c1.032,3.3196 2.71416,7.68152 5.66224,8.57936c2.58688,0.9976 5.16,0.086 6.82496,-1.2212l18.70328,-17.34792l30.19288,23.5468l0.71896,0.43c2.05024,0.90816 4.01448,1.36224 5.88928,1.36224c1.44824,0 2.838,-0.27176 4.16584,-0.81528c4.5236,-1.8576 6.33304,-6.16792 6.52224,-6.6564l22.55264,-117.22488c1.376,-6.2608 -0.53664,-9.44624 -2.38736,-11.01144zM75.68,110.08l-10.32,27.52l-10.32,-34.4l79.12,-58.48z"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a class="insta" href=""
+                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#e90101">
+                                    <path
+                                        d="M57.32214,17.2c-22.12493,0 -40.12214,18.01386 -40.12214,40.14453v57.33333c0,22.12493 18.01386,40.12214 40.14453,40.12214h57.33333c22.12493,0 40.12214,-18.01386 40.12214,-40.14453v-57.33333c0,-22.12493 -18.01386,-40.12214 -40.14453,-40.12214zM126.13333,40.13333c3.1648,0 5.73333,2.56853 5.73333,5.73333c0,3.1648 -2.56853,5.73333 -5.73333,5.73333c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333c0,-3.1648 2.56853,-5.73333 5.73333,-5.73333zM86,51.6c18.9716,0 34.4,15.4284 34.4,34.4c0,18.9716 -15.4284,34.4 -34.4,34.4c-18.9716,0 -34.4,-15.4284 -34.4,-34.4c0,-18.9716 15.4284,-34.4 34.4,-34.4zM86,63.06667c-12.66573,0 -22.93333,10.2676 -22.93333,22.93333c0,12.66573 10.2676,22.93333 22.93333,22.93333c12.66573,0 22.93333,-10.2676 22.93333,-22.93333c0,-12.66573 -10.2676,-22.93333 -22.93333,-22.93333z"
+                                    ></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-end">
+                    <div class="footer-year">
+                        <span>&copy;2021-2022 &#448;</span>
+                    </div>
+                    <div class="footer-le-cinema">
+                        <span>Le cinéma</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="bg-black" class="background-black-cover"></div>
+    </body>
+</html>
