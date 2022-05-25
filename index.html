@@ -1,539 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Главная</title>
-        <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <script defer src="js/script.js"></script>
-        <link rel="shortcut icon" href="images/icon.png" type="image/png">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon" />
+        <title>Эль Кулинарно</title>
     </head>
-    <body>
-        <header>
-            <nav id="nav">
-                <div id="bg-black-2" class="background-black-cover"></div>
-                <div class="navlogo">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" width="60" height="60" alt="logo" />
-                    </a>
+    <body style="font-family: 'Rubik', sans-serif">
+        <div class="nav-container">
+            <nav class="nav">
+                <div class="ElKulinarno-container">
+                    <span class="cool-font">Эль Кулинарно</span>
                 </div>
-                <div class="navbuttons">
-                    <a href="html/news.html" class="butnav">КиноНовости</a>
-                    <a href="html/films.html" class="butnav">Фильмы</a>
-                    <a href="html/serials.html" class="butnav">Сериалы</a>
+                <div class="hamburger-icon-container">
+                    <div class="hamburger-icon">
+                        <svg height="30" id="menu-hamburger" style="fill: #000000" viewbox="0 0 172 172" width="30" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                            <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                <g fill="#000000">
+                                    <path
+                                        d="M17.2,40.13333c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843h137.6c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843zM17.2,80.26667c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843h137.6c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843zM17.2,120.4c-2.06765,-0.02924 -3.99087,1.05709 -5.03322,2.843c-1.04236,1.78592 -1.04236,3.99474 0,5.78066c1.04236,1.78592 2.96558,2.87225 5.03322,2.843h137.6c2.06765,0.02924 3.99087,-1.05709 5.03322,-2.843c1.04236,-1.78592 1.04236,-3.99474 0,-5.78066c-1.04236,-1.78592 -2.96558,-2.87225 -5.03322,-2.843z"
+                                    ></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
-                <button class="hamburger-menu-icon" id="m-menu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24" style="fill: white"><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path></svg>
-                </button>
+                <div class="nav-button-container">
+                    <a class="nav-button" href="index.html">Главная</a>
+                    <a class="nav-button" href="html/recipes.html">Рецепты</a>
+                    <a class="nav-button" href="html/funchoza.html">Блюдо дня</a>
+                    <a class="nav-button" href="html/about.html">О сайте</a>
+                </div>
+                <div class="hamburger-container" id="m-menu">
+                    <div class="hamburger">
+                        <a class="hamburger-button" href="index.html">Главная</a>
+                        <a class="hamburger-button" href="html/recipes.html">Рецепты</a>
+                        <a class="hamburger-button" href="html/funchoza.html">Блюдо дня</a>
+                        <a class="hamburger-button" href="html/about.html">О сайте</a>
+                    </div>
+                </div>
             </nav>
-        </header>
-        <div class="hamburger-menu ham-menu-hidden" id="m-menu">
-            <a href="html/news.html" class="hamburger-button hamburger-pointer-events-none" id="ham-but-1">КиноНовости</a>
-            <a href="html/films.html" class="hamburger-button hamburger-pointer-events-none" id="ham-but-2">Фильмы</a>
-            <a href="html/serials.html" class="hamburger-button hamburger-pointer-events-none" id="ham-but-3">Сериалы</a>
         </div>
-        <div class="wrapper">
-            <div class="poster-buttons">
-                <button id="previous-button" class="cool-button previous" style="z-index: 10"><img class="prev-button-img" srcset="https://img.icons8.com/external-colours-bomsymbols-/96/external-arrow-digital-design-colors-set-2-colours-bomsymbols--2.png 2x" alt="arrow_48x48" loading="lazy" /></button>
-                <button id="next-button" class="cool-button next" style="z-index: 10"><img class="next-button-img" srcset="https://img.icons8.com/external-colours-bomsymbols-/96/external-arrow-digital-design-colors-set-2-colours-bomsymbols--2.png 2x" alt="arrow_48x48" loading="lazy" /></button>
-            </div>
-            <div class="image-container" id="image-1" style="z-index: 4">
-                <img src="images/slideshow-img-1.jpg" class="image" alt="#1" />
-                <div class="poster-black-cover"></div>
-                <div class="poster-information-container" id="information-1">
-                    <div class="poster-information" id="poster">
-                        <div class="new-releases">
-                            <span>Новинки</span>
-                        </div>
-                        <div class="poster-name">
-                            <span>Дом Гуччи</span>
-                        </div>
-                        <div class="poster-ratings-container">
-                            <div class="poster-imdb-rating">
-                                <div class="poster-rating-circle">
-                                    <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                                        <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="transparent" cx="15" cy="15" r="14"></circle>
-                                        <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="70" cx="15" cy="15" r="14"></circle>
-                                    </svg>
-                                    <b class="poster-rating"> 7.0 </b>
-                                </div>
-                                <div class="poster-imdb-score">
-                                    <img src="images/imdb-logo.svg" width="60" height="60" alt="imdb-logo" />
-                                    <div class="poster-imdb-score-title">
-                                        <span>Score</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="poster-year">
-                                <span>2021</span>
-                            </div>
-                            <div class="film-resolution">
-                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                            </div>
-                            <div class="poster-length">
-                                <span>158 мин.</span>
-                            </div>
-                            <div class="poster-genre">
-                                <span>Биография, драма, криминал, триллер</span>
-                            </div>
-                        </div>
-                        <div class="poster-describtion">
-                            <span>Милан, 1978 год. Девушка из небогатой семьи Патриция Реджани на вечеринке знакомится с Маурицио Гуччи, нерешительным наследником знаменитого модного дома.</span>
-                        </div>
-                        <a href="html/gucci.html" class="watch-now">
-                            <span>Посмотреть трейлер</span>
-                        </a>
+        <div class="blur-container" id="bg-blur">
+            <div class="print-container">
+                <div class="chief-img-container">
+                    <img alt="Повар" class="img-cover" src="../images/povar.jpg" />
+                </div>
+                <div class="img-gradient-top"></div>
+                <div class="img-grad-bottom-container">
+                    <div class="img-gradient-bottom"></div>
+                </div>
+                <div class="wellcome-container-1">
+                    <div class="wellcome-container-2">
+                        <p class="wellcome">Добро пожаловать на Эль Кулинарно!</p>
                     </div>
                 </div>
             </div>
-            <div class="image-container" id="image-2" style="z-index: 3">
-                <img src="images/slideshow-img-2.jpg" class="image" alt="#2" />
-                <div class="poster-black-cover"></div>
-                <div class="poster-information-container" id="information-1">
-                    <div class="poster-information" id="poster">
-                        <div class="new-releases">
-                            <span>Новинки</span>
+            <div class="first-main-container-1">
+                <div class="first-main-container-2" style="background-image: url(../images/wallpapers.jpg)">
+                    <div class="h2-container-1">
+                        <div class="h2-container-2">
+                            <h2 class="h2">Что приготовить?</h2>
                         </div>
-                        <div class="poster-name">
-                            <span>Смерть и жизнь Джона Ф.Донована</span>
+                    </div>
+                    <div class="cesar-chief-recipes-container">
+                        <div class="cesar-container">
+                            <img alt="Цезарь" class="cesar-img" src="../images/cesar.jpg" />
+                            <div class="meal-of-day">Блюдо дня</div>
+                            <div class="cesar-describtion-container">
+                                <p class="cesar-describtion-1">Салат "Цезарь"</p>
+                                <p class="cesar-describtion-2">Легкий, пикантный и достаточно сытный – это описание идеально подходит для описания салата «Цезарь» с мясом курицы. Это блюдо пробовал каждый хотя бы уже потому, что оно предельно просто в приготовлении.</p>
+                                <a class="cesar-recipe-view" href="cesar.html">Посмотреть рецепт полностью</a>
+                            </div>
                         </div>
-                        <div class="poster-ratings-container">
-                            <div class="poster-imdb-rating">
-                                <div class="poster-rating-circle">
-                                    <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                                        <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                        <circle class="circle-chart__circle" stroke="#777" stroke-width="2" stroke-dasharray="68" cx="15" cy="15" r="14"></circle>
-                                    </svg>
-                                    <b class="poster-rating"> 6.8 </b>
-                                </div>
-                                <div class="poster-imdb-score">
-                                    <img src="images/imdb-logo.svg" width="60" height="60" alt="imdb-logo" />
-                                    <div class="poster-imdb-score-title">
-                                        <span>Score</span>
+                        <div class="creator-container">
+                            <div class="creator-img-container">
+                                <img alt="Я" class="creator-img" src="../images/me.jpg" />
+                            </div>
+                            <div class="creator-describtion-container">
+                                <p class="creator-describtion-1">Шеф-повар адской кухни</p>
+                                <p class="creator-describtion-2">Хотите найти свои любимые рецепты от лучшего шеф-повара страны?</p>
+                                <p class="creator-describtion-3">Вы их нашли!</p>
+                                <a class="creator-recipes" href="recipes.html">Рецепты от пользователя</a>
+                            </div>
+                        </div>
+                        <div class="recipes-categ-container">
+                            <p class="recipe-categories-title">Категории рецептов</p>
+                            <div class="recipe-categories-icons">
+                                <a class="recipe-category-1" href="recipes_salad.html">
+                                    <img class="recipe-category-icon" src="https://img.icons8.com/wired/48/000000/salad.png" />
+                                    <span class="recipe-category-title">Салаты</span>
+                                    <div class="recipe-category-icon-gradient"></div>
+                                </a>
+                                <a class="recipe-category-2" href="recipes_meat.html">
+                                    <img class="recipe-category-icon" src="https://img.icons8.com/wired/48/000000/rack-of-lamb.png" />
+                                    <span class="recipe-category-title">Мясо</span>
+                                    <div class="recipe-category-icon-gradient"></div>
+                                </a>
+                                <a class="recipe-category-1" href="recipes_dessert.html">
+                                    <img class="recipe-category-icon" src="https://img.icons8.com/wired/48/000000/cupcake.png" />
+                                    <span class="recipe-category-title">Дессерты</span>
+                                    <div class="recipe-category-icon-gradient"></div>
+                                </a>
+                                <a class="recipe-category-2" href="recipes_spaghetti.html">
+                                    <img class="recipe-category-icon" src="https://img.icons8.com/wired/48/000000/spaghetti.png" />
+                                    <span class="recipe-category-title">Паста</span>
+                                    <div class="recipe-category-icon-gradient"></div>
+                                </a>
+                                <a class="recipe-category-1" href="">
+                                    <img class="recipe-category-icon" src="https://img.icons8.com/wired/48/000000/bavarian-pretzel.png" />
+                                    <span class="recipe-category-title">Выпечка</span>
+                                    <div class="recipe-category-icon-gradient"></div>
+                                </a>
+                                <a class="recipe-category-2" href="">
+                                    <img class="recipe-category-icon" src="https://img.icons8.com/wired/48/000000/seafood.png" />
+                                    <span class="recipe-category-title">Рыба</span>
+                                    <div class="recipe-category-icon-gradient"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-main-container">
+                        <div class="gray-line"></div>
+                        <div class="latest-recipes-title">Последние рецепты</div>
+                        <div class="latest-recipes-container-1">
+                            <div class="latest-recipes-container-2">
+                                <a class="recipe-container" href="cesar.html">
+                                    <img alt="Салат Цезарь" class="img-cover" src="../images/cesar.jpg" />
+                                    <div class="recipe-view-hover"></div>
+                                    <div class="recipe-view-icon-container">
+                                        <svg class="recipe-view-icon" version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                <g fill="#ffffff">
+                                                    <path
+                                                        d="M72.24,13.76c-32.25687,0 -58.48,26.22313 -58.48,58.48c0,32.25687 26.22313,58.48 58.48,58.48c12.77059,0 24.55868,-4.15869 34.185,-11.12625l45.23063,45.23062l9.72875,-9.72875l-44.81406,-44.81406c8.79545,-10.23604 14.14969,-23.51227 14.14969,-38.04156c0,-32.25687 -26.22313,-58.48 -58.48,-58.48zM72.24,20.64c28.53864,0 51.6,23.06136 51.6,51.6c0,28.53864 -23.06136,51.6 -51.6,51.6c-28.53864,0 -51.6,-23.06136 -51.6,-51.6c0,-28.53864 23.06136,-51.6 51.6,-51.6zM44.72,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM72.24,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM99.76,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span class="recipe-view-title">Посмотреть рецепт</span>
+                                    </div>
+                                </a>
+                                <div class="recipe-title-difficulty-container">
+                                    <span class="recipe-title">Салат "Цезарь" с курицей</span>
+                                    <div class="recipe-difficulty-icons-container">
+                                        <div class="recipe-difficulty-icons">
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                    <g>
+                                                        <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#e5aa17"></path>
+                                                        <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g transform="">
+                                                    <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                        <g>
+                                                            <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#cccccc"></path>
+                                                            <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                        </g>
+                                                        <path d="" fill="none"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g transform="">
+                                                    <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                        <g>
+                                                            <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#cccccc"></path>
+                                                            <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                        </g>
+                                                        <path d="" fill="none"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="extralight">Легко</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="poster-year">
-                                <span>2018</span>
-                            </div>
-                            <div class="film-resolution">
-                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                            </div>
-                            <div class="poster-length">
-                                <span>123 мин.</span>
-                            </div>
-                            <div class="poster-genre">
-                                <span>Драма</span>
-                            </div>
-                        </div>
-                        <div class="poster-describtion">
-                            <span>Переписка с юным поклонником меняет жизнь популярного актера. Кит Харингтон в англоязычном дебюте Ксавье Долана.</span>
-                        </div>
-                        <a href="html/donovan.html" class="watch-now">
-                            <span>Посмотреть трейлер</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container" id="image-3" style="z-index: 2">
-                <img src="images/slideshow-img-3.jpg" class="image" alt="#3" />
-                <div class="poster-black-cover"></div>
-                <div class="poster-information-container" id="information-1">
-                    <div class="poster-information" id="poster">
-                        <div class="new-releases">
-                            <span>Новинки</span>
-                        </div>
-                        <div class="poster-name">
-                            <span>Общество мертвых поэтов</span>
-                        </div>
-                        <div class="poster-ratings-container">
-                            <div class="poster-imdb-rating">
-                                <div class="poster-rating-circle">
-                                    <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                                        <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                        <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="82" cx="15" cy="15" r="14"></circle>
-                                    </svg>
-                                    <b class="poster-rating"> 8.2 </b>
-                                </div>
-                                <div class="poster-imdb-score">
-                                    <img src="images/imdb-logo.svg" width="60" height="60" alt="imdb-logo" />
-                                    <div class="poster-imdb-score-title">
-                                        <span>Score</span>
+                            <div class="latest-recipes-container-2">
+                                <a class="recipe-container" href="">
+                                    <img alt="Итальянская паста Каннелони" class="img-cover" src="../images/canneloni.jpg" />
+                                    <div class="recipe-view-hover"></div>
+                                    <div class="recipe-view-icon-container">
+                                        <svg class="recipe-view-icon" version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                <g fill="#ffffff">
+                                                    <path
+                                                        d="M72.24,13.76c-32.25687,0 -58.48,26.22313 -58.48,58.48c0,32.25687 26.22313,58.48 58.48,58.48c12.77059,0 24.55868,-4.15869 34.185,-11.12625l45.23063,45.23062l9.72875,-9.72875l-44.81406,-44.81406c8.79545,-10.23604 14.14969,-23.51227 14.14969,-38.04156c0,-32.25687 -26.22313,-58.48 -58.48,-58.48zM72.24,20.64c28.53864,0 51.6,23.06136 51.6,51.6c0,28.53864 -23.06136,51.6 -51.6,51.6c-28.53864,0 -51.6,-23.06136 -51.6,-51.6c0,-28.53864 23.06136,-51.6 51.6,-51.6zM44.72,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM72.24,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM99.76,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span class="recipe-view-title">Посмотреть рецепт</span>
+                                    </div>
+                                </a>
+                                <div class="recipe-describtion-container">
+                                    <span class="recipe-describtion-title">Итальянская паста Каннелони</span>
+                                    <div class="recipe-difficulty-container">
+                                        <div class="recipe-difficulty-icons">
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                    <g>
+                                                        <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#e5aa17"></path>
+                                                        <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                    <g>
+                                                        <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#e5aa17"></path>
+                                                        <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g transform="">
+                                                    <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                        <g>
+                                                            <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#cccccc"></path>
+                                                            <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                        </g>
+                                                        <path d="" fill="none"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="extralight-font">Средне</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="poster-year">
-                                <span>1989</span>
-                            </div>
-                            <div class="film-resolution">
-                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                            </div>
-                            <div class="poster-length">
-                                <span>128 мин.</span>
-                            </div>
-                            <div class="poster-genre">
-                                <span>Драма, комедия</span>
-                            </div>
-                        </div>
-                        <div class="poster-describtion">
-                            <span>В элитную школу приходит учитель-вольнодумец. Одна из лучших ролей Робина Уильямса, «Оскар» за сценарий.</span>
-                        </div>
-                        <a href="html/poetsSociety.html" class="watch-now">
-                            <span>Посмотреть трейлер</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="image-container" style="z-index: 1">
-                <img src="images/slideshow-img-1.jpg" class="image" alt="#1" />
-                <div class="poster-black-cover"></div>
-                <div class="poster-information-container" id="information-1">
-                    <div class="poster-information" id="poster">
-                        <div class="new-releases">
-                            <span>Новинки</span>
-                        </div>
-                        <div class="poster-name">
-                            <span>Дом Гуччи</span>
-                        </div>
-                        <div class="poster-ratings-container">
-                            <div class="poster-imdb-rating">
-                                <div class="poster-rating-circle">
-                                    <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" fill="transparent" xmlns="http://www.w3.org/2000/svg">
-                                        <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                        <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="70" cx="15" cy="15" r="14"></circle>
-                                    </svg>
-                                    <b class="poster-rating"> 7.0 </b>
-                                </div>
-                                <div class="poster-imdb-score">
-                                    <img src="images/imdb-logo.svg" width="60" height="60" alt="imdb-logo" />
-                                    <div class="poster-imdb-score-title">
-                                        <span>Score</span>
+                            <div class="latest-recipes-container-2">
+                                <a class="recipe-container" href="">
+                                    <img alt="Итальянская паста Карбонара" class="img-cover" src="../images/carbonara.jpg" />
+                                    <div class="recipe-view-hover"></div>
+                                    <div class="recipe-view-icon-container">
+                                        <svg class="recipe-view-icon" version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                <g fill="#ffffff">
+                                                    <path
+                                                        d="M72.24,13.76c-32.25687,0 -58.48,26.22313 -58.48,58.48c0,32.25687 26.22313,58.48 58.48,58.48c12.77059,0 24.55868,-4.15869 34.185,-11.12625l45.23063,45.23062l9.72875,-9.72875l-44.81406,-44.81406c8.79545,-10.23604 14.14969,-23.51227 14.14969,-38.04156c0,-32.25687 -26.22313,-58.48 -58.48,-58.48zM72.24,20.64c28.53864,0 51.6,23.06136 51.6,51.6c0,28.53864 -23.06136,51.6 -51.6,51.6c-28.53864,0 -51.6,-23.06136 -51.6,-51.6c0,-28.53864 23.06136,-51.6 51.6,-51.6zM44.72,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM72.24,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM99.76,65.36c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88z"
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <span class="recipe-view-title">Посмотреть рецепт</span>
+                                    </div>
+                                </a>
+                                <div class="recipe-describtion-container">
+                                    <span class="recipe-describtion-title">Итальянская паста Карбонара</span>
+                                    <div class="recipe-difficulty-container">
+                                        <div class="recipe-difficulty-icons">
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                    <g>
+                                                        <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#e5aa17"></path>
+                                                        <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g transform="">
+                                                    <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                        <g>
+                                                            <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#cccccc"></path>
+                                                            <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                        </g>
+                                                        <path d="" fill="none"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <svg version="1.1" viewbox="0 0 172 172" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <g transform="">
+                                                    <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                        <g>
+                                                            <path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#cccccc"></path>
+                                                            <path d="M86,32.88828l16.39375,33.19063l36.61719,5.34141l-26.50547,25.83359l6.24844,36.48281l-32.75391,-17.23359l-32.7875,17.23359l6.28203,-36.48281l-26.50547,-25.83359l36.61719,-5.34141z" fill="#ffffff"></path>
+                                                        </g>
+                                                        <path d="" fill="none"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="extralight-font">Легко</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="poster-year">
-                                <span>2021</span>
-                            </div>
-                            <div class="film-resolution">
-                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                            </div>
-                            <div class="poster-length">
-                                <span>158 мин.</span>
-                            </div>
-                            <div class="poster-genre">
-                                <span>Биография, драма, криминал, триллер</span>
-                            </div>
                         </div>
-                        <div class="poster-describtion">
-                            <span>Милан, 1978 год. Девушка из небогатой семьи Патриция Реджани на вечеринке знакомится с Маурицио Гуччи, нерешительным наследником знаменитого модного дома.</span>
-                        </div>
-                        <a href="" class="watch-now">
-                            <span>Посмотреть трейлер</span>
-                        </a>
                     </div>
+                    <footer class="footer">
+                        <div class="about-help-social-container">
+                            <div class="about-container">
+                                <h2 class="about-title">Об Эль Кулинарно</h2>
+                                <span class="about-information">Этот великолепный сайт создавался усилиями студента-энтузиаста ради воплощения своей давней мечты и закрытия курсовой работы</span>
+                            </div>
+                            <div class="help-container">
+                                <h2 class="footer-information-title">Нужна помощь?</h2>
+                                <div class="email-container">
+                                    <span class="E-title">E:</span>
+                                    <span class="extralight-font">kartashov104@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="socials-container">
+                                <h2 class="footer-information-title">Следите за нами в соц. сетях</h2>
+                                <div class="socials-icons">
+                                    <a href="https://vk.com/darkangellite" target="_blank">
+                                        <svg height="48" style="fill: #000000" viewbox="0 0 172 172" width="48" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                            <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                <g fill="#e85445"><path d="M129,18.8125h-86c-11.87337,0 -21.5,9.62663 -21.5,21.5v86c0,11.87338 9.62663,21.5 21.5,21.5h86c11.87338,0 21.5,-9.62662 21.5,-21.5v-86c0,-11.87337 -9.62662,-21.5 -21.5,-21.5zM113.74306,112.875c-3.27606,-10.22325 -11.44069,-18.13256 -22.23906,-19.20756v19.20756h-1.66625c-29.37975,0 -46.139,-20.17775 -46.83775,-53.75h14.71944c0.48375,24.64169 11.33319,35.07994 19.92781,37.23263v-37.23262h13.85944v21.25275c8.48713,-0.91375 17.40425,-10.5995 20.41156,-21.25275h13.85944c-2.30856,13.12844 -11.97819,22.8115 -18.8555,26.79438c6.87463,3.22769 17.888,11.6745 22.07781,26.95563z"></path></g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <a href="https://t.me/FarHowl" target="_blank">
+                                        <svg height="48" style="fill: #000000" viewbox="0 0 172 172" width="48" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+                                            <g fill="none" fill-rule="nonzero" font-family="none" font-size="none" font-weight="none" stroke="none" stroke-dasharray="" stroke-dashoffset="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-width="1" style="mix-blend-mode: normal" text-anchor="none">
+                                                <path d="M0,172v-172h172v172z" fill="none"></path>
+                                                <g>
+                                                    <path d="M86,14.33333c-39.58041,0 -71.66667,32.08626 -71.66667,71.66667c0,39.58041 32.08626,71.66667 71.66667,71.66667c39.58041,0 71.66667,-32.08626 71.66667,-71.66667c0,-39.58041 -32.08626,-71.66667 -71.66667,-71.66667z" fill="#e85445"></path>
+                                                    <path d="M121.65417,53.75l-13.42317,68.53483c0,0 -0.57692,3.13183 -4.46125,3.13183c-2.064,0 -3.12825,-0.98183 -3.12825,-0.98183l-29.07517,-24.12658l-14.22583,-7.17025l-18.25708,-4.85542c0,0 -3.25008,-0.93883 -3.25008,-3.62633c0,-2.23958 3.34325,-3.30742 3.34325,-3.30742l76.38233,-30.34367c-0.00358,-0.00358 2.33275,-0.84208 4.03483,-0.8385c1.04633,0 2.23958,0.44792 2.23958,1.79167c0,0.89583 -0.17917,1.79167 -0.17917,1.79167z" fill="#ffffff"></path>
+                                                    <path d="M82.41667,109.30958l-12.2765,12.09017c0,0 -0.53392,0.41208 -1.247,0.43c-0.24725,0.00717 -0.51242,-0.03225 -0.78475,-0.15408l3.45433,-21.37458z" fill="#b0bec5"></path>
+                                                    <path d="M107.13092,65.20233c-0.60558,-0.78833 -1.72358,-0.93167 -2.51192,-0.33325l-47.28567,28.29758c0,0 7.5465,21.113 8.69675,24.768c1.15383,3.65858 2.07833,3.74458 2.07833,3.74458l3.45433,-21.37458l35.23133,-32.594c0.78833,-0.59842 0.93525,-1.72 0.33683,-2.50833z" fill="#cfd8dc"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rights-container-1">
+                            <div class="rights-container-2">
+                                <div class="rights-container-3">
+                                    <span class="copyright">©Эль Кулинарно</span>
+                                    <span class="year">2022</span>
+                                    <span class="extralight-font">Все права защищены</span>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </div>
-        <div class="film-container-1">
-            <div class="film-container-2">
-                <div class="film-main-information-container-1">
-                    <div class="container-1"></div>
-                    <div class="watch-films-container">
-                        <div class="Le-Cinema-recomendation">
-                            <div class="top-films">
-                                <span> Топ фильмов от</span>
-                            </div>
-                            <div class="Le-Cinema-title-mainpage">
-                                <span>Le cinéma</span>
-                            </div>
-                        </div>
-                        <div class="watch-films">
-                            <div class="poster">
-                                <a class="postercontainer" href="html/bornstar.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/fd523651-a8c4-4a71-847e-cf2e4a565c9c/orig" alt="Звезда родилась" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="74" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 7.4 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="tag-year">
-                                    <div class="tags">Романтика</div>
-                                    <div class="year">2018</div>
-                                </div>
-                                <div class="name">Звезда родилась</div>
-                            </div>
-                            <div class="poster">
-                                <a class="postercontainer" href="html/tickTickBoom.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/e8aa799c-0783-43a1-a25f-9bfbeeb901eb/3840x" alt="Тик-так... БУМ!" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="80" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 8.0 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="tag-year">
-                                    <div class="tags">Мьюзикл</div>
-                                    <div class="year">2021</div>
-                                </div>
-                                <div class="name">Тик-так... БУМ!</div>
-                            </div>
-                            <div class="poster">
-                                <a class="postercontainer" href="html/hocking.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/388c52c8-70f7-4b06-9215-2fae9d1cc966/orig" alt="Вселенная Стивена Хокинга" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="79" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 7.9 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="tag-year">
-                                    <div class="tags">Драма</div>
-                                    <div class="year">2014</div>
-                                </div>
-                                <div class="name">Вселенная Стивена Хокинга</div>
-                            </div>
-                            <div class="poster">
-                                <a class="postercontainer" href="html/parisMidnight.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/3cc57b96-0f01-4550-b2f1-e981e36f1333/3840x" alt="Полночь в Париже" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="77" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 7.7 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="tag-year">
-                                    <div class="tags">Фэнтези</div>
-                                    <div class="year">2011</div>
-                                </div>
-                                <div class="name">Полночь в Париже</div>
-                            </div>
-                        </div>
-                        <div class="Le-Cinema-recomendation-2">
-                            <div class="top-films">
-                                <span> Топ сериалов от</span>
-                            </div>
-                            <div class="Le-Cinema-title-mainpage">
-                                <span>Le cinéma</span>
-                            </div>
-                        </div>
-                        <div class="watch-films">
-                            <div class="poster">
-                                <a class="postercontainer" href="html/friends.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/42e73a58-908b-485e-8946-241db6a8e3b0/orig" alt="Друзья" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="87" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 9.2 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="season-year">
-                                    <div class="season">10 сезонов</div>
-                                    <div class="year-serial">1994-2004</div>
-                                </div>
-                                <div class="tags">Комедия</div>
-                                <div class="name">Друзья</div>
-                            </div>
-                            <div class="poster">
-                                <a class="postercontainer" href="html/GoT.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/6281ffec-3dbb-46c6-b6d2-2a2db21d344c/orig" alt="Игра престолов" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="84,4" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 9.0 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="season-year">
-                                    <div class="season">8 сезонов</div>
-                                    <div class="year-serial">2011-2019</div>
-                                </div>
-                                <div class="tags">Фэнтези</div>
-                                <div class="name">Игра престолов</div>
-                            </div>
-                            <div class="poster">
-                                <a class="postercontainer" href="">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/54f45e1f-c789-49f9-90be-4dc7f6f4b57e/orig" alt="Очень странные дела" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="84" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 8.4 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="season-year">
-                                    <div class="season">4 сезона</div>
-                                    <div class="year-serial">2016-...</div>
-                                </div>
-                                <div class="tags">Ужасы</div>
-                                <div class="name">Очень странные дела</div>
-                            </div>
-                            <div class="poster">
-                                <a class="postercontainer" href="html/ann.html">
-                                    <img class="posterfilm-index" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/209536e2-8eda-47e3-9044-3a1d330ba809/orig" alt="Энн" />
-                                    <div class="postergrad">
-                                        <div class="circle-container">
-                                            <div class="resolution-img">
-                                                <img srcset="https://img.icons8.com/fluency/96/4k.png 2x" alt="4k_48x48" loading="lazy" />
-                                            </div>
-                                            <div class="circle-rate">
-                                                <svg class="circle-chart" viewBox="0 0 30 30" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle class="circle-chart__background" stroke="#2f3439" stroke-width="2" fill="none" cx="15" cy="15" r="14"></circle>
-                                                    <circle class="circle-chart__circle" stroke="#3bb33b" stroke-width="2" stroke-dasharray="86" cx="15" cy="15" r="14"></circle>
-                                                </svg>
-                                                <b> 8.6 </b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="season-year">
-                                    <div class="season">3 сезона</div>
-                                    <div class="year-serial">2017-2019</div>
-                                </div>
-                                <div class="tags">Драма</div>
-                                <div class="name">Энн</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-1"></div>
-                </div>
-            </div>
-            <footer>
-                <div class="footer-contacts">
-                    <div class="footer-questions">
-                        <span>Есть вопросы? Свяжитесь с нами.</span>
-                    </div>
-                    <div class="email">
-                        <span>Почта: daryakovyaz@ya.ru</span>
-                    </div>
-                    <div class="footer-creator">
-                        <span>Ковязина Дарья &mdash; М3О&ndash;233Б&ndash;20</span>
-                    </div>
-                </div>
-                <div class="icons">
-                    <a class="vk" href=""
-                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                <path d="M0,172v-172h172v172z" fill="none"></path>
-                                <g fill="#e90101">
-                                    <path
-                                        d="M137.6,22.93333h-103.2c-6.33533,0 -11.46667,5.13133 -11.46667,11.46667v103.2c0,6.33533 5.13133,11.46667 11.46667,11.46667h103.2c6.33533,0 11.46667,-5.13133 11.46667,-11.46667v-103.2c0,-6.33533 -5.13133,-11.46667 -11.46667,-11.46667zM122.46973,108.74413l-10.70987,0.14907c0,0 -2.31053,0.45293 -5.332,-1.634c-4.0076,-2.752 -7.78587,-9.91293 -10.7328,-8.98413c-2.98707,0.95173 -2.89533,7.396 -2.89533,7.396c0,0 0.02293,1.1352 -0.65933,1.8748c-0.7396,0.79693 -2.19013,0.71667 -2.19013,0.71667h-4.7988c0,0 -10.58373,0.8772 -19.91187,-8.84653c-10.15947,-10.60093 -19.13787,-31.52187 -19.13787,-31.52187c0,0 -0.52747,-1.31867 0.0344,-1.9952c0.6364,-0.74533 2.35067,-0.76827 2.35067,-0.76827l11.46667,-0.05733c0,0 1.07787,0.1892 1.8576,0.76253c0.6364,0.47013 0.9976,1.35307 0.9976,1.35307c0,0 1.85187,4.6956 4.31147,8.94973c4.79307,8.2904 7.0176,10.10787 8.64587,9.2192c2.3736,-1.29573 1.66267,-11.71893 1.66267,-11.71893c0,0 0.04587,-3.784 -1.19253,-5.4696c-0.9632,-1.31293 -2.77493,-1.7028 -3.56613,-1.80027c-0.64787,-0.086 0.40707,-1.58813 1.78307,-2.26467c2.064,-1.00907 5.7104,-1.0664 10.01613,-1.02627c3.354,0.0344 4.32293,0.2408 5.63013,0.56187c3.956,0.95747 2.6144,4.64973 2.6144,13.50773c0,2.838 -0.51027,6.8284 1.5308,8.14133c0.88293,0.5676 3.03293,0.086 8.3936,-9.05293c2.55133,-4.3344 4.46053,-9.4256 4.46053,-9.4256c0,0 0.41853,-0.90587 1.0664,-1.29573c0.66507,-0.40133 1.55947,-0.2752 1.55947,-0.2752l12.06867,-0.07453c0,0 3.62347,-0.43573 4.214,1.20973c0.6192,1.72 -1.35307,5.73907 -6.28373,12.3152c-8.09547,10.8016 -8.9956,9.79827 -2.2704,16.0476c6.42133,5.9684 7.74573,8.86947 7.96933,9.2364c2.65453,4.4204 -2.95267,4.77013 -2.95267,4.77013z"
-                                    ></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </a>
-                    <a class="facebook" href=""
-                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                <path d="M0,172v-172h172v172z" fill="none"></path>
-                                <g fill="#e90101"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,34.49173 25.41013,62.97493 58.5144,67.95147v-49.71947h-17.02227v-18.08293h17.02227v-12.03427c0,-19.92333 9.70653,-28.66667 26.2644,-28.66667c7.9292,0 12.126,0.59053 14.10973,0.85427v15.78387h-11.29467c-7.02907,0 -9.48293,6.66787 -9.48293,14.17853v9.88427h20.59987l-2.79213,18.08293h-17.80773v49.8628c33.58013,-4.55227 59.48907,-33.2648 59.48907,-68.0948c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g>
-                            </g>
-                        </svg>
-                    </a>
-                    <a class="tg" href=""
-                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                <path d="M0,172v-172h172v172z" fill="none"></path>
-                                <g fill="#e90101">
-                                    <path d="M158.71128,22.53888c-2.58,-2.18784 -6.63232,-2.50088 -10.82224,-0.81872h-0.00688c-4.40664,1.76816 -124.73784,53.38192 -129.6364,55.49064c-0.89096,0.3096 -8.67224,3.21296 -7.87072,9.68016c0.71552,5.8308 6.96944,8.24568 7.73312,8.52432l30.59192,10.4748c2.0296,6.75616 9.5116,31.6824 11.16624,37.00752c1.032,3.3196 2.71416,7.68152 5.66224,8.57936c2.58688,0.9976 5.16,0.086 6.82496,-1.2212l18.70328,-17.34792l30.19288,23.5468l0.71896,0.43c2.05024,0.90816 4.01448,1.36224 5.88928,1.36224c1.44824,0 2.838,-0.27176 4.16584,-0.81528c4.5236,-1.8576 6.33304,-6.16792 6.52224,-6.6564l22.55264,-117.22488c1.376,-6.2608 -0.53664,-9.44624 -2.38736,-11.01144zM75.68,110.08l-10.32,27.52l-10.32,-34.4l79.12,-58.48z"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </a>
-                    <a class="insta" href=""
-                        ><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style="fill: #000000">
-                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                <path d="M0,172v-172h172v172z" fill="none"></path>
-                                <g fill="#e90101">
-                                    <path
-                                        d="M57.32214,17.2c-22.12493,0 -40.12214,18.01386 -40.12214,40.14453v57.33333c0,22.12493 18.01386,40.12214 40.14453,40.12214h57.33333c22.12493,0 40.12214,-18.01386 40.12214,-40.14453v-57.33333c0,-22.12493 -18.01386,-40.12214 -40.14453,-40.12214zM126.13333,40.13333c3.1648,0 5.73333,2.56853 5.73333,5.73333c0,3.1648 -2.56853,5.73333 -5.73333,5.73333c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333c0,-3.1648 2.56853,-5.73333 5.73333,-5.73333zM86,51.6c18.9716,0 34.4,15.4284 34.4,34.4c0,18.9716 -15.4284,34.4 -34.4,34.4c-18.9716,0 -34.4,-15.4284 -34.4,-34.4c0,-18.9716 15.4284,-34.4 34.4,-34.4zM86,63.06667c-12.66573,0 -22.93333,10.2676 -22.93333,22.93333c0,12.66573 10.2676,22.93333 22.93333,22.93333c12.66573,0 22.93333,-10.2676 22.93333,-22.93333c0,-12.66573 -10.2676,-22.93333 -22.93333,-22.93333z"
-                                    ></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </a>
-                </div>
-                <div class="footer-end">
-                    <div class="footer-year">
-                        <span>&copy;2021-2022 &#448;</span>
-                    </div>
-                    <div class="footer-le-cinema">
-                        <span>Le cinéma</span>
-                    </div>
-                </div>
-            </footer>
-            <div id="bg-black" class="background-black-cover"></div>
-        </div>
+        <script src="../js/index.js"></script>
     </body>
 </html>
